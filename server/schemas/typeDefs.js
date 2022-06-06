@@ -23,7 +23,7 @@ const typeDefs = gql `
       challengeType: String
       backGroundImg: String
       description: String
-      choices: String
+      choices: [String]
   }
 
   type Checkout {

@@ -5,11 +5,11 @@ const scenarioSchema = new Schema({
         type: String,
     },
 
-    challengetype :{
+    challengeType :{
         type: String,
     },
 
-    backgroundimg:{
+    backgroundImg:{
         type: String,
     },
 
@@ -18,7 +18,7 @@ const scenarioSchema = new Schema({
     },
 
     choices:{
-        type: String,
+        type: Array,
     },
 
 })
