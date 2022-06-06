@@ -17,7 +17,6 @@ const server = new ApolloServer({
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-<<<<<<< HEAD
 // if (process.env.NODE_ENV === 'production') {
 //   app.use(express.static(path.join(__dirname, '../client/build')));
 // }
@@ -25,16 +24,6 @@ app.use(express.json());
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 // });
-=======
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/build')));
-}
-
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
-
->>>>>>> 22f0ee65b3b16c9e00cd196102b14625a916e4e5
 
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async (typeDefs, resolvers) => {
@@ -47,13 +36,7 @@ const startApolloServer = async (typeDefs, resolvers) => {
       console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
     })
   })
-<<<<<<< HEAD
  };
   
   // Call the async function to start the server
-=======
-  };
-  
-// Call the async function to start the server
->>>>>>> 22f0ee65b3b16c9e00cd196102b14625a916e4e5
   startApolloServer(typeDefs, resolvers);
