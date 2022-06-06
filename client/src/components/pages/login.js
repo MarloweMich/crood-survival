@@ -57,6 +57,7 @@ const Login = () => {
                         name="email"
                         type="email"
                         value={formState.email}
+                        onChange={handleChange}
                     /><br/><br/>
                     <input
                         className="form-input"
@@ -64,6 +65,7 @@ const Login = () => {
                         name="password"
                         type="password"
                         value={formState.password}
+                        onChange={handleChange}
                     /><br/><br/><br/>
                     <button
                         className="submit-button"
