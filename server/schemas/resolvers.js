@@ -33,6 +33,20 @@ const resolvers = {
 
       throw new AuthenticationError('Not logged in');
     },
+    addHero: async (parent, {heroData}, context) => {
+      console.log("hero added?")
+      if (context.user) {
+        console.log("are you here?")
+      const updatedUser = await User.findOneAndUpdate(
+        {_id: context.user._id},
+        {
+          $push: {Hero: heroData},
+        },
+        {new: true, runValidators: true}
+      )
+      return updatedUser;
+      }
+    },
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 
