@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 const bcrypt = require('bcrypt');
 const Hero = require('./Hero');
+const Message = require ('./Message')
 
 const userSchema = new Schema({
   username:{
@@ -20,10 +21,16 @@ const userSchema = new Schema({
     required: true,
     minlength: 5
   },
-  heros: [
+  heroes: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'Hero'
+      ref: 'Hero',
+    }
+  ],
+  messages: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Message',
     }
   ]
 });
