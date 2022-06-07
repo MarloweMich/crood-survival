@@ -24,8 +24,8 @@ const heroSchema = new Schema ({
     description:{
 
         type: String,
-        minlegnth: 1,
-        maxlegnth:280,
+        minlength: 1,
+        maxlength:280,
 
     },
 })

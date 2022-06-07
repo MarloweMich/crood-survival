@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Hero, Scenario} = require('../models');
+const { User, Hero, Scenario, Message} = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -15,6 +15,10 @@ const resolvers = {
 
     scenario: async()=>{
         return Scenario.find({})
+    },
+
+    message: async() => {
+      return Message.find({})
     }
 
   },
@@ -26,6 +30,7 @@ const resolvers = {
 
       return { token, user };
     },
+
     updateUser: async (parent, args, context) => {
       if (context.user) {
         return await User.findByIdAndUpdate(context.user._id, args, { new: true });
@@ -33,6 +38,7 @@ const resolvers = {
 
       throw new AuthenticationError('Not logged in');
     },
+
     addHero: async (parent, {heroData}, context) => {
       console.log("hero added?")
       if (context.user) {
@@ -40,13 +46,14 @@ const resolvers = {
       const updatedUser = await User.findOneAndUpdate(
         {_id: context.user._id},
         {
-          $push: {Hero: heroData},
+          $push: {heroes: heroData},
         },
         {new: true, runValidators: true}
       )
       return updatedUser;
       }
     },
+
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 
@@ -63,6 +70,16 @@ const resolvers = {
       const token = signToken(user);
 
       return { token, user };
+    },
+
+    addMessage: async (parent, { sender, text }) => {
+      const message = await Message.create({sender, text});
+
+      await User.findOneAndUpdate(
+        {username: sender},
+        {$push: {messages: message._id}}
+      )
+      return message
     }
   }
 };

@@ -6,7 +6,14 @@ const typeDefs = gql `
       username: String
       email: String!
       password: String!
-      Hero: [Hero]
+      heroes: [Hero]
+      messages: [Message]
+  }
+
+  type Message {
+    _id: ID!
+    sender: String
+    text: String
   }
 
   type Hero {
@@ -47,6 +54,7 @@ const typeDefs = gql `
     user:[User]
     hero:[Hero]
     scenario:[Scenario]
+    message:[Message]
   }
 
   type Mutation {
@@ -54,6 +62,7 @@ const typeDefs = gql `
     updateUser(username: String, email: String, password: String): User
     login(email: String!, password: String!): Auth
     addHero(heroData: heroData): User
+    addMessage(sender: String, text: String): Message
   }
 `;
 
