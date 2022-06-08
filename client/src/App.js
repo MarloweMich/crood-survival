@@ -1,9 +1,9 @@
 import React from 'react';
 import LandingPage from './pages/landingpage';
 import Header from './components/Header';
-// import { Chat, chatClient } from "./components/Chat"
-// import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink, useSubscription, gql } from "@apollo/client"
-// import { WebSocketLink } from "@apollo/client/link/ws"
+import { Chat, chatClient } from "./components/Chat"
+import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink, useSubscription, gql } from "@apollo/client"
+import { WebSocketLink } from "@apollo/client/link/ws"
 import { setContext } from '@apollo/client/link/context';
 import Auth from './utils/auth';
 import "./App.css"
