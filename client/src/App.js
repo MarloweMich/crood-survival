@@ -1,7 +1,12 @@
 import React from 'react';
 import LandingPage from './pages/landingpage';
-import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink, } from "@apollo/client"
+import Header from './components/Header';
+// import { Chat, chatClient } from "./components/Chat"
+// import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink, useSubscription, gql } from "@apollo/client"
+// import { WebSocketLink } from "@apollo/client/link/ws"
 import { setContext } from '@apollo/client/link/context';
+import Auth from './utils/auth';
+import "./App.css"
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const httpLink = createHttpLink({
@@ -24,9 +29,15 @@ const client = new ApolloClient({
 });
 
 function App() {
+
+  
+
   return (
     <ApolloProvider client={client}>
-      <LandingPage />
+      <div className='frame'>
+      <Header />
+      {Auth.loggedIn() ? <Chat/> : <LandingPage/>}
+      </div>
     </ApolloProvider>
   );
 }
