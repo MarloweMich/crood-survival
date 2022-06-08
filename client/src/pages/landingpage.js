@@ -1,14 +1,20 @@
-import React from 'react'
-import Login from '../components/login'
-import Signup from '../components/signup'
+import React from "react";
+import Login from "../components/login";
+import Signup from "../components/signup";
+import "./landingpage.css";
 
 function LandingPage() {
+
   return (
-    <div>
+    <>
+      <div className="formBox">
         <Login />
+      </div>
+      <div className="formBox">
         <Signup />
-    </div>
-  )
+      </div>
+    </>
+  );
 }
 
-export default LandingPage
+export default LandingPage;

@@ -1,0 +1,6 @@
+.frame {
+background-image: url("https://img.freepik.com/free-photo/cave-wall-background_181627-531.jpg?w=1800");
+display: flex;
+width: 100vw;
+height: 100vh;
+}

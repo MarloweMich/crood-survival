@@ -21,6 +21,8 @@ const resolvers = {
       return Message.find({})
     }
 
+    
+
   },
 
   Mutation: {
@@ -81,6 +83,8 @@ const resolvers = {
       )
       return message
     }
+    
+
   }
 };
 
