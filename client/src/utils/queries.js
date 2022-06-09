@@ -10,12 +10,12 @@ export const QUERY_USER = gql`
   }
 `;
 
-// export const GET_MESSAGES = gql`
-// subscription {
-//   messages {
-//     _id
-//     sender
-//     text
-//   }
-// }
-// `;
+export const GET_MESSAGES = gql`
+subscription {
+  messages {
+    _id
+    sender
+    text
+  }
+}
+`;

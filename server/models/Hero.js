@@ -28,6 +28,9 @@ const heroSchema = new Schema ({
         maxlength:280,
 
     },
+    heroImg:{
+        type: String,
+    }
 })
 const Hero = model ('Hero', heroSchema);
 
