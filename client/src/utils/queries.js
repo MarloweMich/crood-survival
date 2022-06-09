@@ -19,3 +19,16 @@ subscription {
   }
 }
 `;
+
+export const GET_SCENARIO = gql`
+  query scenario {
+    scenario {
+      _id
+      name
+      challengeType
+      backgroundImg
+      description
+      choices
+    }
+  }`
+
