@@ -10,12 +10,27 @@ export const QUERY_USER = gql`
   }
 `;
 
-// export const GET_MESSAGES = gql`
-// subscription {
-//   messages {
-//     _id
-//     sender
-//     text
-//   }
-// }
-// `;
+export const QUERY_HERO = gql`
+  query hero {
+    hero {
+      _id
+      name
+      type
+      attributes
+      lives
+      description
+    }
+  }
+`;
+
+
+
+export const GET_MESSAGES = gql`
+subscription {
+  messages {
+    _id
+    sender
+    text
+  }
+}
+`;
