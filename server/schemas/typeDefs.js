@@ -23,6 +23,7 @@ const typeDefs = gql `
       lives: Int
       attributes: String
       description: String
+      heroImg: String
   }
 
   input heroData{

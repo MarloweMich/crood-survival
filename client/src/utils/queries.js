@@ -31,3 +31,4 @@ export const GET_SCENARIO = gql`
       choices
     }
   }`
+

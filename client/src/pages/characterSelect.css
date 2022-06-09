@@ -1,0 +1,87 @@
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+
+}
+
+.card-img-top {
+    border-bottom: .5px solid rgb(229, 223, 223);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 1%;
+    width: 450px;
+    padding: 1%;
+    background-color: transparent;
+}
+
+.heroType{
+    display: none;
+    margin-bottom: 0%;
+}
+
+.heroAttribute{
+    display: none;
+}
+
+.heroLives{
+    display: none;
+}
+
+.heroDescription{
+    display: none;
+}
+
+.card:hover {
+    width: 650px;
+    overflow-y: visible;
+    animation-duration: 3s;
+    transition-duration: .5s;
+    padding-bottom: 70px;
+}
+
+.card:hover .heroType {
+    /* position: absolute; */
+    bottom: 2%;
+    left: 7%;
+    display: block;
+    background-color: lightgray;
+    margin: 0%;
+}
+
+.card:hover .heroAttribute {
+    /* position: absolute; */
+    bottom: 2%;
+    right: 7%;
+    display: block;
+    background-color: lightgray;
+    margin: 0%;
+}
+
+.card:hover .heroLives {
+    /* position: absolute; */
+    bottom: 7%;
+    left: 7%;
+    display: block;
+    background-color: lightgray;
+    margin: 0%;
+}
+
+.card:hover .heroDescription {
+    /* position: absolute; */
+    bottom: 7%;
+    left: 7%;
+    display: block;
+    background-color: lightgray;
+    margin: 0%;
+}
