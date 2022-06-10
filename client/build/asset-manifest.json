@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.7a5489c0.css",
-    "main.js": "/static/js/main.d17a7266.js",
+    "main.css": "/static/css/main.e4fce372.css",
+    "main.js": "/static/js/main.2c68151b.js",
     "static/js/787.5dede8bd.chunk.js": "/static/js/787.5dede8bd.chunk.js",
+    "static/media/Carson-51mjj.ttf": "/static/media/Carson-51mjj.9a161451a8934b659ff4.ttf",
+    "static/media/caveman_regular.ttf": "/static/media/caveman_regular.48240c4322542f0709cd.ttf",
+    "static/media/JazzyCaveman.ttf": "/static/media/JazzyCaveman.661d2a99edaf9b197b49.ttf",
+    "static/media/Lookmumnocomputer-GOlaG.otf": "/static/media/Lookmumnocomputer-GOlaG.bdf5014359b586e125be.otf",
+    "static/media/ArtGreco-WyPE.ttf": "/static/media/ArtGreco-WyPE.b35e8a0247879fd069b8.ttf",
+    "static/media/D3Stonism-GOdm.ttf": "/static/media/D3Stonism-GOdm.21d4916325466b6e6b77.ttf",
+    "static/media/Prehistoric_Caveman.ttf": "/static/media/Prehistoric_Caveman.76611911b8e4fe3c032d.ttf",
+    "static/media/Vimland-9YmW2.otf": "/static/media/Vimland-9YmW2.59167edca94d31b6eadb.otf",
     "index.html": "/index.html",
-    "main.7a5489c0.css.map": "/static/css/main.7a5489c0.css.map",
-    "main.d17a7266.js.map": "/static/js/main.d17a7266.js.map",
+    "main.e4fce372.css.map": "/static/css/main.e4fce372.css.map",
+    "main.2c68151b.js.map": "/static/js/main.2c68151b.js.map",
     "787.5dede8bd.chunk.js.map": "/static/js/787.5dede8bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a5489c0.css",
-    "static/js/main.d17a7266.js"
+    "static/css/main.e4fce372.css",
+    "static/js/main.2c68151b.js"
   ]
 }
