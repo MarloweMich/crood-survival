@@ -10,6 +10,7 @@ import "./App.css"
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CharacterSelect from './pages/characterSelect';
 import PathSelection from './pages/PathSelection';
+import ScenarioSelect from './pages/scenarios';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -30,6 +31,7 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+
 function App() {
 
   
@@ -38,9 +40,10 @@ function App() {
     <ApolloProvider client={client}>
       <div className='frame'>
       <Header />
-      {Auth.loggedIn() ? <PathSelection/> : <LandingPage/>}
+      {Auth.loggedIn() ? <CharacterSelect/> : <LandingPage/>}
       </div>
     </ApolloProvider>
+
   );
 }
 
