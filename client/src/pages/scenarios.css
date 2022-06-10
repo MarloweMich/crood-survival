@@ -1,0 +1,78 @@
+body{
+    background-image: url("https://img.freepik.com/free-photo/cave-wall-background_181627-531.jpg?w=1800");
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+
+}
+
+.card-img-top {
+    border-bottom: .5px solid rgb(229, 223, 223);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 1%;
+    width: 450px;
+    padding: 1%;
+    background-color: transparent;
+}
+
+.scenarioName{
+    display: none;
+    margin-bottom: 0%;
+}
+
+.scenarioDescription{
+    display: none;
+}
+
+.scenarioChoices{
+    display: none;
+}
+
+.card:hover {
+    width: 650px;
+    overflow-y: visible;
+    animation-duration: 3s;
+    transition-duration: .5s;
+    padding-bottom: 70px;
+}
+
+.card:hover .scenarioName {
+    /* position: absolute; */
+    bottom: 2%;
+    left: 7%;
+    display: block;
+    background-color: lightgray;
+    margin: 0%;
+}
+
+.card:hover .scenarioDescription {
+    /* position: absolute; */
+    bottom: 2%;
+    right: 7%;
+    display: block;
+    background-color: lightgray;
+    margin: 0%;
+}
+
+.card:hover .scenarioChoices {
+    /* position: absolute; */
+    bottom: 7%;
+    left: 7%;
+    display: block;
+    background-color: lightgray;
+    margin: 0%;
+}
