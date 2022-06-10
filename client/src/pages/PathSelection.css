@@ -1,0 +1,14 @@
+.backGround{
+    /* background-image: url("https://www.shutterstock.com/search/three+way+walking+path"); */
+    /* background-color: red; */
+    /* display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; */
+    margin: 12%;
+    /* margin: auto; */
+    height: 750px;
+    width: 1200px;
+    max-width: 100%;
+    max-height: 100%;
+}

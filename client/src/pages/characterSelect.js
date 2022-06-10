@@ -34,6 +34,9 @@ const heroes = [
   ]
 
 function CharacterSelect(props) {
+
+  
+
     return (
         <div className='cardContainer'>
             {heroes.map(hero => (
