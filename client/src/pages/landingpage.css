@@ -1,5 +1,5 @@
 .formBox{
-    background-color: rgb(133, 129, 129);
+    background-color: rgb(159,75,44);/*rgb(133, 129, 129);*/
     margin: auto;
     width: 30%;
     height: 50%;
@@ -7,4 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /*border-style: inset;
+    border-style: outset;
+    border-style: ridge;*/
+    border-style: groove;
 }
