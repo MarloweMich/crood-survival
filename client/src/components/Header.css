@@ -1,0 +1,14 @@
+header > div{
+    padding: 30px;
+    font-family: caveman3;
+    color: rgb(161, 71, 69);
+    text-shadow: 8px 8px 8px #000000;
+}
+.logoutButton{
+    padding: 30px;
+    font-family: caveman3;
+    color: rgb(161, 71, 69);
+    background-color: rgba(0, 0, 0, 0);
+    text-shadow: 8px 8px 8px #000000;
+    border: none;
+}
