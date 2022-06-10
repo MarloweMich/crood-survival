@@ -1,25 +1,45 @@
 @font-face {
-    font-family: caveman1;
-    src: url(../Assets/Fonts/caveman_regular.ttf);
-  }
+  font-family: caveman1;
+  src: url(../Assets/Fonts/caveman_regular.ttf);
+}
 @font-face {
-    font-family: caveman2;
-    src: url(../Assets/Fonts/JazzyCaveman.ttf);
-  }
+  font-family: caveman2;
+  src: url(../Assets/Fonts/JazzyCaveman.ttf);
+}
 @font-face {
-    font-family: caveman3;
-    src: url(../Assets/Fonts/Prehistoric_Caveman.ttf);
-  }
+  font-family: caveman3;
+  src: url(../Assets/Fonts/Prehistoric_Caveman.ttf);
+}
+@font-face {
+  font-family: caveman4;
+  src: url(../Assets/Fonts/ArtGreco-WyPE.ttf);
+}
+@font-face {
+  font-family: caveman5;
+  src: url(../Assets/Fonts/Carson-51mjj.ttf);
+}
+@font-face {
+  font-family: caveman6;
+  src: url(../Assets/Fonts/D3Stonism-GOdm.ttf);
+}
+@font-face {
+  font-family: caveman7;
+  src: url(../Assets/Fonts/Lookmumnocomputer-GOlaG.otf);
+}
+@font-face {
+  font-family: caveman8;
+  src: url(../Assets/Fonts/Vimland-9YmW2.otf);
+}
 
 .card-header {
     font-family: caveman3;
 }
 
 .form-input {
-    font-family: caveman2;
+    font-family: caveman6;
     width: 200px;
 }
 
 .submit-button {
-    font-family: caveman1;
+    font-family: caveman4;
 }
