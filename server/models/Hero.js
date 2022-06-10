@@ -25,7 +25,6 @@ const heroSchema = new Schema ({
 
         type: String,
         minlength: 1,
-        maxlength:280,
 
     },
     heroImg:{
