@@ -5,6 +5,11 @@ function Scenario(scenArray, hero) {
 
   const [scenario, setScenario] = useState(scenArray.array[0])
 
+  // function resolveScenario(index, diff) {
+  //   progressScenario(index)
+  //   diceroll(diff)
+  // }
+
   console.log(scenario)
 
   const renderScenario = () => {
@@ -36,6 +41,7 @@ function Scenario(scenArray, hero) {
                     <p className='scenarioDescription'>{scenArray.array[2].description}</p>
                     {/* <p className='scenarioChoices'>Choices: {scenArray.array[2].choices[2]} or {scenArray.array[2].choices[1]}</p> */}
                     <button onClick={() => progressScenario(scenArray.array[0])}>{scenArray.array[2].choices[0]}</button>
+                    {/* <button onClick={() => resolveScenario(scenArray.array[0], 30)}>{scenArray.array[2].choices[0]}</button> */}
                     <button onClick={() => progressScenario(scenArray.array[0])}>{scenArray.array[2].choices[1]}</button>
                 </div>
       );
