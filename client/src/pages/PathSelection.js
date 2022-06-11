@@ -106,8 +106,12 @@ const hardScen = [
   },
 ];
 
-function PathSelection(hero) {
+function PathSelection({hero}) {
     // console.log(hero)
+
+  // const [lives, setLives] = useState(hero.lives);
+  // console.log(lives)
+
   const [path, setPath] = useState("");
 
   const renderPath = () => {
