@@ -16,7 +16,7 @@ const heroes = [
   {
     name: "Brita",
     type: "Healer",
-    lives: 7,
+    lives: 10,
     attributes: "Healing",
     description:
       "When a skirmish with a neighboring tribe decimated the population of her tribe, Brita did not hesitate to take charge, the role of Leader coming to her naturally. While leading her tribe to safety, Brita honed both her skills in leadership and in healing. Brita garners the respect of all around her and travelers from tribes far and wide seek out her healing powers. Her demeanor and ability to heal make Brita a necessity for any group.",
@@ -25,7 +25,7 @@ const heroes = [
   {
     name: "Asbjorn",
     type: "Tank",
-    lives: 10,
+    lives: 7,
     attributes: "Strength",
     description:
       "First born son of the leader of a warrior tribe, Asbjorn was forced to fight his entire life. Trained with weapons since he could walk, Asbjorn grew to become the greatest warrior his tribe has ever known. The size of a bear, Asbjorn is the first person to rush towards a conflict and always the only one to walk away. His size and skills in weaponry make him a crucial asset to any group.",
@@ -35,7 +35,7 @@ const heroes = [
     name: "Urszula",
     type: "Assassin",
     lives: 5,
-    attributes: "Speed",
+    attributes: "Agility",
     description:
       "Youngest sister of Asbjorn, though without the blessing of his enormous size, Urszula was raied around warriors. Not big in stature or overly powerful, Urszula learned quickly that her biggest strength was her speed. Bestowed with Asbjorns spirit of never fleeing a fight, Urszula does not know fear and is not phased by the prospect of defeat. Flying around the battle as a blur, Urszula is a welcomed addition to any party on the roam.",
     heroImg: "https://drive.google.com/uc?id=1JupjZ7eJ5EcRamTjExNkB1Cbpk2ICuRP",
