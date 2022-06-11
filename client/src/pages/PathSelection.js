@@ -8,7 +8,7 @@ const easyScen = [
     name: "El Lago Gigante",
     challengeType: "easy",
     backgroundImg:
-      "https://drive.google.com/file/d/1G6if_hM4IwBVcpc5m02P0dEBR0wetgC8/view?usp=sharing",
+      "https://drive.google.com/uc?id=1G6if_hM4IwBVcpc5m02P0dEBR0wetgC8",
     description:
       "You come to a large lake. The lake expands as far as you can see in in every direction. This lake is new to you, you are not sure of the depth or the creatures lurking below the surface. The only thing you know for sure is that the quickest way to safety is for you to swim across.Finding a way around may be safer but will add an unknown amount of time to your voyage. Swim or Walk, your choice.",
     choices: ["Swim across the lake", "Find a way around"],
@@ -106,18 +106,19 @@ const hardScen = [
   },
 ];
 
-function PathSelection() {
-  const [scenario, setScenario] = useState("");
+function PathSelection(hero) {
+    // console.log(hero)
+  const [path, setPath] = useState("");
 
-  const renderScenario = () => {
-    if (scenario === easyScen) {
-      return <Scenario array={easyScen} />;
+  const renderPath = () => {
+    if (path === easyScen) {
+      return <Scenario array={easyScen} hero={hero} />;
     }
-    if (scenario === normalScen) {
-      return <Scenario array={normalScen} />;
+    if (path === normalScen) {
+      return <Scenario array={normalScen} hero={hero} />;
     }
-    if (scenario === hardScen) {
-      return <Scenario array={hardScen} />;
+    if (path === hardScen) {
+      return <Scenario array={hardScen} hero={hero} />;
     } else {
       return (
         <div className="PathSelection">
@@ -138,12 +139,12 @@ function PathSelection() {
 
   const chooseDifficulty = (diff) => {
     // console.log(diff)
-    return setScenario(diff);
+    return setPath(diff);
   };
 
   return (
     <div>
-      {renderScenario()}
+      {renderPath()}
     </div>
   );
 }
