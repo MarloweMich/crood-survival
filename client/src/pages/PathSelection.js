@@ -6,7 +6,8 @@ const easyScen = [
   {
     id: 1,
     name: "El Lago Gigante",
-    challengeType: "easy",
+    difficulty: "easy",
+    challengeType: "Agility",
     backgroundImg:
       "https://drive.google.com/uc?id=1G6if_hM4IwBVcpc5m02P0dEBR0wetgC8",
     description:
@@ -16,7 +17,8 @@ const easyScen = [
   {
     id: 2,
     name: "Wayfaring Stranger",
-    challengeType: "easy",
+    difficulty: "easy",
+    challengeType: "Healing",
     backgroundImg:
       "https://drive.google.com/uc?id=1LpCEVh_i5Jh7jsgaLeMghKCPTWrpiSW8",
     description:
@@ -26,7 +28,8 @@ const easyScen = [
   {
     id: 3,
     name: "Cave Dive or Nah?",
-    challengeType: "easy",
+    difficulty: "easy",
+    challengeType: "Stealth",
     backgroundImg:
       "https://drive.google.com/uc?id=1QayHDYh-cRJp7oROEKupxOZlNeUon2qS",
     description:
@@ -39,7 +42,8 @@ const normalScen = [
   {
     id: 1,
     name: "Biggest Mountain Literally Ever",
-    challengeType: "normal",
+    difficulty: "medium",
+    challengeType: "Agility",
     backgroundImg:
       "https://drive.google.com/uc?id=1W9hjAci24HwSB5KPAbKCL8c_-ie5Q4O-",
     description:
@@ -49,7 +53,8 @@ const normalScen = [
   {
     id: 2,
     name: "Grab N Go",
-    challengeType: "normal",
+    difficulty: "medium",
+    challengeType: "Stealth",
     backgroundImg:
       "https://drive.google.com/uc?id=1ihbNnVKL2E1p3UfE0tg7ot8YYrZ6sPrd",
     description:
@@ -62,7 +67,8 @@ const normalScen = [
   {
     id: 3,
     name: "Big Scary Bear Thing",
-    challengeType: "normal",
+    difficulty: "medium",
+    challengeType: "Strength",
     backgroundImg:
       "https://drive.google.com/uc?id=12XCjmOCcnrMwlSYx59x23f-ZHV7AZdn7",
     description:
@@ -74,7 +80,8 @@ const hardScen = [
   {
     id: 1,
     name: "This River Seems Angry",
-    challengeType: "hard",
+    difficulty: "hard",
+    challengeType: "Agility",
     backgroundImg:
       "https://drive.google.com/uc?id=1hbfTUfzDjsM42GGbd76ZoyxND_gYgv32",
     description:
@@ -87,7 +94,8 @@ const hardScen = [
   {
     id: 2,
     name: "U Wanna Go Bro?",
-    challengeType: "hard",
+    difficulty: "hard",
+    challengeType: "Strength",
     backgroundImg:
       "https://drive.google.com/uc?id=1hvAme3GZpd6cTDiEPuFKsDg15ufZawMi",
     description:
@@ -97,7 +105,8 @@ const hardScen = [
   {
     id: 3,
     name: "Hopscotch For Your Life",
-    challengeType: "hard",
+    difficulty: "hard",
+    challengeType: "Agility",
     backgroundImg:
       "https://drive.google.com/uc?id=13j6K28zT9PEVpDPC91oPQ2UR8kN8LBZN",
     description:
@@ -108,9 +117,6 @@ const hardScen = [
 
 function PathSelection({hero}) {
     // console.log(hero)
-
-  // const [lives, setLives] = useState(hero.lives);
-  // console.log(lives)
 
   const [path, setPath] = useState("");
 
