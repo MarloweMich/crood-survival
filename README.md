@@ -1,4 +1,48 @@
-# Getting Started with Create React App
+# Crood Survival
+
+Welcome to Crood Survival the caveman survival game where you get to test your luck in an adventurous map
+
+## How To Play
+
+Log into our database and select your character of choice, from then on select a character of your choice and and select a map of diffuculty you'd like to select from 'Easy' 'Normal' 'Hard', where the odds get put more against you the more difficult it gets, and from then on out click on the paths you would like to take which
+
+## Collaborators
+
+This project was made possible with 
+
+[Micheal Marlowe](https://github.com/MarloweMich)
+
+[Mitchell Freeman](https://github.com/FreemanMitch13)
+
+[Matthew Tanner](https://github.com/mjtanner-github)
+
+[Marvin Bolanos](https://github.com/bo1anos)
+
+## Technologies Used 
+
+* Mongo.DB
+
+* Mongooose
+
+* React
+
+* JWT
+
+* Express
+
+* Apollo
+
+* Graphql
+
+## Thought Process 
+
+Our thought process going into this was figuring out how to challenge ourselves but have fun trying to make our vision a reality, we all enjoy games and who doesnt want to test their luck here and their, where you decide your own fate, you choose your own attributes and you take on the wild, 
+
+We first felt like we wanted to have an established server, So Marvin handled the Schemas, Models, and part of the server JS , Mitchell worked on the seeded database and from then on out we decided to work on the front-end where Matthew took the head start on the login page and than Micheal took on most of the front end with the group adding on their own pointers and views, most of the issues we had were incoporating our lives and the decretion of lives
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
