@@ -30,6 +30,10 @@
   font-family: caveman8;
   src: url(../Assets/Fonts/Vimland-9YmW2.otf);
 }
+@font-face {
+  font-family: caveman9;
+  src: url(../Assets/Fonts/flintstone.ttf);
+}
 
 .card-header {
     font-family: caveman3;

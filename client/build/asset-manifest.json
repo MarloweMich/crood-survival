@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e4fce372.css",
-    "main.js": "/static/js/main.2c68151b.js",
+    "main.css": "/static/css/main.7d69f236.css",
+    "main.js": "/static/js/main.15cbc1f4.js",
     "static/js/787.5dede8bd.chunk.js": "/static/js/787.5dede8bd.chunk.js",
     "static/media/Carson-51mjj.ttf": "/static/media/Carson-51mjj.9a161451a8934b659ff4.ttf",
     "static/media/caveman_regular.ttf": "/static/media/caveman_regular.48240c4322542f0709cd.ttf",
@@ -12,12 +12,12 @@
     "static/media/Prehistoric_Caveman.ttf": "/static/media/Prehistoric_Caveman.76611911b8e4fe3c032d.ttf",
     "static/media/Vimland-9YmW2.otf": "/static/media/Vimland-9YmW2.59167edca94d31b6eadb.otf",
     "index.html": "/index.html",
-    "main.e4fce372.css.map": "/static/css/main.e4fce372.css.map",
-    "main.2c68151b.js.map": "/static/js/main.2c68151b.js.map",
+    "main.7d69f236.css.map": "/static/css/main.7d69f236.css.map",
+    "main.15cbc1f4.js.map": "/static/js/main.15cbc1f4.js.map",
     "787.5dede8bd.chunk.js.map": "/static/js/787.5dede8bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4fce372.css",
-    "static/js/main.2c68151b.js"
+    "static/css/main.7d69f236.css",
+    "static/js/main.15cbc1f4.js"
   ]
 }

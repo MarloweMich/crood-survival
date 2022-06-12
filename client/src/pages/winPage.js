@@ -1,12 +1,11 @@
 import React from "react";
-//import { Link } from 'react-router-dom';
-import "./lose.css";
+import "./win.css";
 
-function LosePage() {
+function WinPage() {
 
   return (
     <div className="container">
-      <h1>Condolances!</h1>
+      <h1>Congratulations!</h1>
       <button className="btn btn-lg btn-light m-2" onClick="changeLocation">
         Play Again?
       </button>
@@ -19,4 +18,4 @@ function LosePage() {
   );
 }
 
-export default LosePage;
+export default WinPage;

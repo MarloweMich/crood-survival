@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import LosePage from "./lose";
+import LosePage from "./losePage";
 
 
 function Scenario({array, hero}) {
