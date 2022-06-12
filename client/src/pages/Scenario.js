@@ -1,26 +1,26 @@
 import React, { useState } from "react";
 import LosePage from "./lose";
 import WinPage from "./win";
+import { attrHistory } from "../utils/helper";
 
 function Scenario({ array, hero }) {
-  // console.log(array);
-  // console.log(hero);
+ //console.log(attrHistory)
 
   const [lives, setLives] = useState(hero.lives);
   // console.log(array)
 
   function diceRoll(diff) {
-    console.log(diff);
+   // console.log(diff);
     let roll = Math.floor(Math.random() * 100) + 1;
-    console.log(roll);
+   // console.log(roll);
     if (roll >= diff) {
       alert("SUCCESS");
-      console.log(true);
+    //  console.log(true);
       return true;
     } else {
       decrementLives(lives);
       alert("NOT SUCCESS");
-      console.log(false);
+     // console.log(false);
       return false;
     }
   }
