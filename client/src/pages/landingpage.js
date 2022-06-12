@@ -1,6 +1,5 @@
 import React from "react";
-import Login from "../components/login";
-import Signup from "../components/signup";
+import LoginSignupSelect from "../components/loginSignupSelect";
 import "./landingpage.css";
 
 function LandingPage() {
@@ -8,10 +7,7 @@ function LandingPage() {
   return (
     <>
       <div className="formBox">
-        <Login />
-      </div>
-      <div className="formBox">
-        <Signup />
+        <LoginSignupSelect />
       </div>
     </>
   );
