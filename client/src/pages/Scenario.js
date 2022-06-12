@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import LosePage from "./losePage";
-import WinPage from "./winPage";
+import LosePage from "./lose";
+import WinPage from "./win";
 
 function Scenario({ array, hero }) {
   // console.log(array);
