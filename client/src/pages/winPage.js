@@ -1,5 +1,5 @@
 import React from "react";
-import "./win.css";
+import "./winPage.css";
 
 function WinPage() {
 
