@@ -75,7 +75,7 @@ function CharacterSelect() {
               <p className="heroAttribute">Attribute: {hero.attributes}</p>
               <p className="heroLives">Lives: {hero.lives}</p>
               <p className="heroDescription">Description: {hero.description}</p>
-              <button onClick={() => chooseChar(hero)} className="chooseHero">Choose {hero.name}</button>
+              <button onClick={() => chooseChar(hero)} id='chooseHero' className="chooseHero">Choose {hero.name}</button>
             </div>
           ))}
         </div>
@@ -83,9 +83,12 @@ function CharacterSelect() {
     }
   };
 
-  const chooseChar = (hero) => {
+  const chooseChar = (hero) => { 
+    window.localStorage.setItem("heroData",JSON.stringify(hero))
+
     return setCharacter(hero);
   };
+
 
   return (
   <div>
