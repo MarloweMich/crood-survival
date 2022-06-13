@@ -60,12 +60,12 @@ function CharacterSelect() {
       return <PathSelection hero={heroes[3]} />;
     } else {
       return (
-        <div className="cardContainer">
+        <div className="characterSelect-cardContainer">
           {heroes.map((hero) => (
-            <div className="card hover-shadow" key={hero.id}>
+            <div className="characterSelect-card hover-shadow" key={hero.id}>
               {/* <h6>{hero.title}</h6> */}
               <img
-                className="card-img-top-char"
+                className="characterSelect-card-img-top-char"
                 src={hero.heroImg}
                 alt={hero.heroImg}
                 width="250px"

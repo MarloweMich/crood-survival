@@ -1,26 +1,24 @@
-.cardContainer{
+.characterSelect-cardContainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    
-
 }
 
-.card-img-top {
+.characterSelect-card-img-top {
     border-bottom: .5px solid rgb(229, 223, 223);
 }
 
-.card {
+.characterSelect-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
     margin: 1%;
-    width: 450px;
+    width: 300px;
     padding: 1%;
     background-color: transparent;
 }
@@ -42,7 +40,7 @@
     display: none;
 }
 
-.card:hover {
+.characterSelect-card:hover {
     width: 650px;
     overflow-y: visible;
     animation-duration: 3s;
@@ -50,7 +48,7 @@
     padding-bottom: 70px;
 }
 
-.card:hover .heroType {
+.characterSelect-card:hover .heroType {
     /* position: absolute; */
     bottom: 2%;
     left: 7%;
@@ -59,7 +57,7 @@
     margin: 0%;
 }
 
-.card:hover .heroAttribute {
+.characterSelect-card:hover .heroAttribute {
     /* position: absolute; */
     bottom: 2%;
     right: 7%;
@@ -68,7 +66,7 @@
     margin: 0%;
 }
 
-.card:hover .heroLives {
+.characterSelect-card:hover .heroLives {
     /* position: absolute; */
     bottom: 7%;
     left: 7%;
@@ -77,7 +75,7 @@
     margin: 0%;
 }
 
-.card:hover .heroDescription {
+.characterSelect-card:hover .heroDescription {
     /* position: absolute; */
     bottom: 7%;
     left: 7%;
@@ -104,7 +102,7 @@
     background-image: linear-gradient(rgb(241,216,207), rgb(252,247,245));
 }
 
-.card-img-top-char, .heroDescription, .heroType, .chooseHero, .heroLives, .heroAttribute
+.characterSelect-card-img-top-char, .heroDescription, .heroType, .chooseHero, .heroLives, .heroAttribute
 {
     border-radius: 5px;
     box-shadow: 21px 34px 55px black;

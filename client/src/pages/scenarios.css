@@ -2,34 +2,30 @@ body{
     background-image: url("https://img.freepik.com/free-photo/cave-wall-background_181627-531.jpg?w=1800");
 }
 
-.cardContainer{
+.cardContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    
-
 }
 
 .card {
+    /* 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: 1%;
-    width: 450px;
+     */
+    margin-left: 15%;
+    margin-right: 15%;
     padding: 1%;
     background-color: transparent;
 }
 
-.card-img-top {
-    border-bottom: .5px solid rgb(229, 223, 223);
-}
-
-.scenarioName{
+.scenarioName {
     display: none;
     margin-bottom: 0%;
 }
@@ -43,7 +39,9 @@ body{
 }
 
 .card:hover {
-    width: 650px;
+    /*width: 650px;*/
+    width: 80%;
+    margin-left: 10%;
     overflow-y: visible;
     animation-duration: 3s;
     transition-duration: .5s;
@@ -77,4 +75,34 @@ body{
     margin: 0%;
 }
 
+.card-img-top {
+    border-bottom: .5px solid rgb(229, 223, 223);
+    width: 70%;
+    margin-left: 15%;
+    height: auto;
+}
 
+.scenarioName, .scenarioDescription, .scenarioChoices {
+    padding: 5px;
+    background-image: linear-gradient(rgb(241,216,207), rgb(252,247,245));
+    border-radius: 5px;
+    box-shadow: 21px 34px 55px black;
+    font-family: caveman3;
+    font-size: xx-small;
+}
+
+.altScenarioSelect-buttonGroup
+{
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.scenarioButton
+{
+    font-family: caveman3;
+    font-size: xx-small;
+    border-radius: 5px;
+    box-shadow: 5px 8px 13px black;
+}

@@ -141,7 +141,7 @@ function PathSelection({hero}) {
               //width="50"
             />
           </div>
-          <table className="buttonGroup">
+          <table className="characterSelect-buttonGroup">
             <tr>
               <td>
                 <button className="easyBtn" onClick={() => chooseDifficulty(easyScen)}>EASY</button>
