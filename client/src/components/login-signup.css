@@ -35,15 +35,26 @@
   src: url(../Assets/Fonts/flintstone.ttf);
 }
 
-.card-header {
+.login-signup-card-header {
     font-family: caveman3;
+    text-align: center;
+    text-shadow: 5px 8px 13px #000000;
+    -webkit-text-stroke: 1px white;
 }
 
-.form-input {
+.login-signup-form-input {
     font-family: caveman6;
     width: 200px;
 }
 
-.submit-button {
+.login-signup-submit-button, .login-signup-success {
     font-family: caveman4;
+    font-size: large;
+    width: 46%;
+    margin-left: 26%;
+    margin-right: 26%;
+}
+
+.login-signup-success {
+  color: white;
 }

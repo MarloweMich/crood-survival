@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import LosePage from "./lose";
 import WinPage from "./win";
 import { attrHistory } from "../utils/helper";
+import "./Scenario.css";
+
 
 function Scenario({ array, hero }) {
  //console.log(attrHistory)
@@ -171,12 +173,20 @@ function Scenario({ array, hero }) {
           />
           <p className="scenarioName">{array[0].name}</p>
           <p className="scenarioDescription">{array[0].description}</p>
-          <button onClick={() => resolveScenario(array[1], 1)}>
-            {array[0].choices[0]}
-          </button>
-          <button onClick={() => progressScenario(array[1], 1)}>
-            {array[0].choices[1]}
-          </button>
+          <table className="mainScenarioSelect-buttonGroup">
+            <tr>
+              <td>
+                <button className="scenarioButton" onClick={() => resolveScenario(array[1], 1)}>
+                  {array[0].choices[0]}
+                </button>
+              </td>
+              <td>
+                <button className="scenarioButton" onClick={() => progressScenario(array[1], 1)}>
+                  {array[0].choices[1]}
+                </button>
+              </td>
+            </tr>
+          </table>
         </div>
       );
     }
