@@ -6,9 +6,7 @@ function SignupPage() {
 
   return (
     <>
-      <div className="formBox">
-        <Signup />
-      </div>
+      <Signup />
     </>
   );
 }

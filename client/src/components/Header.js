@@ -12,6 +12,8 @@ const Header = () => {
         <div>
         {Auth.loggedIn() ? (
             <>
+              Crood Survival
+              <br></br>
               <button className="logoutButton" onClick={logout}>
                 Logout
               </button>

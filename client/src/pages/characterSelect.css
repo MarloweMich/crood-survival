@@ -85,3 +85,27 @@
     background-color: lightgray;
     margin: 0%;
 }
+
+.heroDescription
+{
+    font-family: caveman8;
+    font-size: x-large;
+}
+
+.heroType, .chooseHero, .heroLives, .heroAttribute
+{
+    font-family: caveman3;
+    font-size:xx-small;
+}
+
+.heroDescription, .heroType, .chooseHero, .heroLives, .heroAttribute
+{
+    padding: 5px;
+    background-image: linear-gradient(rgb(241,216,207), rgb(252,247,245));
+}
+
+.card-img-top-char, .heroDescription, .heroType, .chooseHero, .heroLives, .heroAttribute
+{
+    border-radius: 5px;
+    box-shadow: 21px 34px 55px black;
+}
