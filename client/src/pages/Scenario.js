@@ -5,7 +5,7 @@ import { attrHistory } from "../utils/helper";
 
 function Scenario({ array, hero }) {
  //console.log(attrHistory)
-
+  
   const [lives, setLives] = useState(hero.lives);
   // console.log(array)
 
@@ -32,61 +32,82 @@ function Scenario({ array, hero }) {
   const [scenario, setScenario] = useState(array[0]);
   // console.log(scenario)
 
-  const determineDifficulty = () => {
+  const determineDifficulty = (index) => {
     let diff = 0;
     if (array[0].difficulty === "easy") {
       switch (scenario) {
         case array[0]:
           diff = 15;
-          return diff;
+          break
+          // return diff;
         case array[1]:
           diff = 25;
-          return diff;
+          break
+          // return diff;
         case array[2]:
           diff = 40;
-          return diff;
+          // return diff;
       }
     }
     if (array[0].difficulty === "medium") {
       switch (scenario) {
         case array[0]:
           diff = 25;
-          return diff;
+          break
+          // return diff;
         case array[1]:
           diff = 45;
-          return diff;
+          break
+          // return diff;
         case array[2]:
           diff = 55;
-          return diff;
+          // return diff;
       }
     }
     if (array[0].difficulty === "hard") {
       switch (scenario) {
         case array[0]:
           diff = 40;
-          return diff;
+          break
+          // return diff;
         case array[1]:
           diff = 60;
-          return diff;
+          break
+          // return diff;
         case array[2]:
           diff = 75;
-          return diff;
+          // return diff;
       }
     }
+    console.log("diff1=", diff);
+    console.log(array);
+    console.log(index);
+    console.log(hero);
+    console.log(array[index - 1].challengeType);
+    if(hero.attributes === array[index - 1].challengeType) {
+      // if(hero.attributes.indexOf(array[index -1].challengeType) !== -1){
+      diff -= 5
+    }
+    console.log("diff2=", diff);
+    return diff;
   };
 
   const progressScenario = (index) => {
     return setScenario(index);
   };
 
-  function resolveScenario(index) {
+  function resolveScenario(scenarioObject,index) {
     if (lives === 0) {
       console.log("game over");
     } else {
-      let diff = determineDifficulty();
+      let diff = determineDifficulty(index);
       // console.log(diff);
-      progressScenario(index);
-      diceRoll(diff);
+      console.log(index);
+      // progressScenario(index);
+      let success = diceRoll(diff);
+      if(success) {
+        progressScenario(scenarioObject);
+      }
     }
   }
 
@@ -109,10 +130,10 @@ function Scenario({ array, hero }) {
           />
           <p className="scenarioName">{array[1].name}</p>
           <p className="scenarioDescription">{array[1].description}</p>
-          <button onClick={() => resolveScenario(array[2])}>
+          <button onClick={() => resolveScenario(array[2], 2)}>
             {array[1].choices[0]}
           </button>
-          <button onClick={() => progressScenario(array[2])}>
+          <button onClick={() => progressScenario(array[2],2)}>
             {array[1].choices[1]}
           </button>
         </div>
@@ -130,7 +151,7 @@ function Scenario({ array, hero }) {
           />
           <p className="scenarioName">{array[2].name}</p>
           <p className="scenarioDescription">{array[2].description}</p>
-          <button onClick={() => resolveScenario("WINNING")}>
+          <button onClick={() => resolveScenario("WINNING", 3)}>
             {array[2].choices[0]}
           </button>
           <button onClick={() => progressScenario("WINNING")}>
@@ -150,10 +171,10 @@ function Scenario({ array, hero }) {
           />
           <p className="scenarioName">{array[0].name}</p>
           <p className="scenarioDescription">{array[0].description}</p>
-          <button onClick={() => resolveScenario(array[1])}>
+          <button onClick={() => resolveScenario(array[1], 1)}>
             {array[0].choices[0]}
           </button>
-          <button onClick={() => progressScenario(array[1])}>
+          <button onClick={() => progressScenario(array[1], 1)}>
             {array[0].choices[1]}
           </button>
         </div>
