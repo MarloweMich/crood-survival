@@ -37,9 +37,9 @@ const Signup = () => {
     }
   };
     return (
-      <div className="card" >
-        <h4 className="card-header" >Sign Up</h4>
-        <div className="card-body">
+      <div className="login-signup-card" >
+        <h4 className="login-signup-card-header" >Sign Up</h4>
+        <div className="login-signup-card-body">
           {data ? (
               <p>
                 Success! You may now head{' '}
@@ -72,7 +72,7 @@ const Signup = () => {
               onChange={handleChange}
             /><br/><br/>
             <button
-              className="submit-button"
+              className="login-signup-submit-button"
               type="submit"
             >
               Submit
