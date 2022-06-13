@@ -81,8 +81,7 @@ function ScenarioSelect(props) {
                 />
                 <p className='scenarioName'>{scenario.name}</p>
                 <p className='scenarioDescription'>{scenario.description}</p>
-                <p className='scenarioChoices'>Choices: {scenario.choices[0]} or {scenario.choices[1]}</p>
-                
+                <p className='scenarioChoices'>Choices: {scenario.choices[0]} or {scenario.choices[0]}</p>
             </div>
          ))}
     </div>

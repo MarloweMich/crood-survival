@@ -3,7 +3,6 @@ import LosePage from "./lose";
 import WinPage from "./win";
 import { attrHistory } from "../utils/helper";
 import "./Scenario.css";
-
 function Scenario({ array, hero }) {
  //console.log(attrHistory)
   
