@@ -1,7 +1,47 @@
-.mainScenarioSelect-buttonGroup
-{
-    width: 70%;
-    text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
+
+.scenario {
+    height: 75vh;
+    width: 75vw;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: auto;
+    margin-top: 0;
+    border: 10px orange solid;
+    overflow-y: visible;
+    max-height: fit-content;
+}
+
+.descBox {
+    position: relative;
+    top: 55%;
+    /* width: 35%; */
+    /* margin-bottom: 0; */
+    width:fit-content;
+    /* float: right; */
+    background-color: rgba(210, 122, 59, 0.6);
+    padding: 2%;
+    border-radius: 18%;
+}
+
+.scenarioDescription {
+    background-color: blue;
+    color: red;
+}
+
+.buttonGroup {
+    position: relative;
+    top: 60%;
+    margin-inline: auto;
+}
+
+.buttonGroup button {
+    margin-inline: 2%;
+    padding: 2%;
+    border-radius: 18%;
+    background-color: bisque;
+}
+
+.buttonGroup button:active {
+    background-color: greenyellow;
+
 }
