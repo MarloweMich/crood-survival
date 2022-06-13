@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import LosePage from "./lose";
 import WinPage from "./win";
 import { attrHistory } from "../utils/helper";
+import "./Scenario.css";
 
 function Scenario({ array, hero }) {
  //console.log(attrHistory)
@@ -14,12 +15,12 @@ function Scenario({ array, hero }) {
     let roll = Math.floor(Math.random() * 100) + 1;
    // console.log(roll);
     if (roll >= diff) {
-      alert("SUCCESS");
+      alert("You are SUCCESSFUL in your endeavors and proceed on your path.");
     //  console.log(true);
       return true;
     } else {
       decrementLives(lives);
-      alert("NOT SUCCESS");
+      alert("You are not SUCCESSFUL in your endeavors. You are weakened. Try again or take the cowards way out.");
      // console.log(false);
       return false;
     }
@@ -120,64 +121,102 @@ function Scenario({ array, hero }) {
     }
     if (scenario === array[1]) {
       return (
-        <div className="card hover-shadow" key={array[1].name}>
-          <img
-            className="card-img-top"
-            src={array[1].backgroundImg}
-            alt={array[1].name}
-            width="300px"
-            height="350px"
-          />
+        <div className="scenario" key={array[1].name} style={{backgroundImage: `url(${array[1].backgroundImg})`}}>
           <p className="scenarioName">{array[1].name}</p>
-          <p className="scenarioDescription">{array[1].description}</p>
-          <button onClick={() => resolveScenario(array[2], 2)}>
-            {array[1].choices[0]}
-          </button>
-          <button onClick={() => progressScenario(array[2],2)}>
-            {array[1].choices[1]}
-          </button>
+           <h4 className="descBox">{array[1].description}</h4>
+           <div className="buttonGroup">
+           <button onClick={() => resolveScenario(array[2], 2)}>
+             {array[1].choices[0]}
+           </button>
+           <button onClick={() => progressScenario(array[2],2)}>
+             {array[1].choices[1]}
+           </button>
+           </div>
         </div>
+        // <div className="card hover-shadow" key={array[1].name}>
+        //   {/* <div style={{background: `url(${array[1].backgroundImg})`}}> */}
+        //   <img
+        //     className="card-img-top"
+        //     src={array[1].backgroundImg}
+        //     alt={array[1].name}
+        //     width="300px"
+        //     height="350px"
+        //   />
+        //   <p className="scenarioName">{array[1].name}</p>
+        //   <p className="scenarioDescription">{array[1].description}</p>
+        //   <button onClick={() => resolveScenario(array[2], 2)}>
+        //     {array[1].choices[0]}
+        //   </button>
+        //   <button onClick={() => progressScenario(array[2],2)}>
+        //     {array[1].choices[1]}
+        //   </button>
+        //   {/* </div> */}
+        // </div>
       );
     }
     if (scenario === array[2]) {
       return (
-        <div className="card hover-shadow" key={array[2].name}>
-          <img
-            className="card-img-top"
-            src={array[2].backgroundImg}
-            alt={array[2].name}
-            width="300px"
-            height="350px"
-          />
+        <div className="scenario" key={array[2].name} style={{backgroundImage: `url(${array[2].backgroundImg})`}}>
           <p className="scenarioName">{array[2].name}</p>
-          <p className="scenarioDescription">{array[2].description}</p>
-          <button onClick={() => resolveScenario("WINNING", 3)}>
-            {array[2].choices[0]}
-          </button>
-          <button onClick={() => progressScenario("WINNING")}>
-            {array[2].choices[1]}
-          </button>
+           <h4 className="descBox">{array[2].description}</h4>
+           <div className="buttonGroup">
+           <button onClick={() => resolveScenario("WINNING", 3)}>
+             {array[2].choices[0]}
+           </button>
+           <button onClick={() => progressScenario("WINNING")}>
+             {array[2].choices[1]}
+           </button>
+           </div>
         </div>
+        // <div className="card hover-shadow" key={array[2].name}>
+        //   <img
+        //     className="card-img-top"
+        //     src={array[2].backgroundImg}
+        //     alt={array[2].name}
+        //     width="300px"
+        //     height="350px"
+        //   />
+        //   <p className="scenarioName">{array[2].name}</p>
+        //   <p className="scenarioDescription">{array[2].description}</p>
+        //   <button onClick={() => resolveScenario("WINNING", 3)}>
+        //     {array[2].choices[0]}
+        //   </button>
+        //   <button onClick={() => progressScenario("WINNING")}>
+        //     {array[2].choices[1]}
+        //   </button>
+        // </div>
       );
     } else {
       return (
-        <div className="card hover-shadow" key={array[0].name}>
-          <img
-            className="card-img-top"
-            src={array[0].backgroundImg}
-            alt={array[0].name}
-            width="300px"
-            height="350px"
-          />
+        <div className="scenario" key={array[0].name} style={{backgroundImage: `url(${array[0].backgroundImg})`}}>
           <p className="scenarioName">{array[0].name}</p>
-          <p className="scenarioDescription">{array[0].description}</p>
-          <button onClick={() => resolveScenario(array[1], 1)}>
-            {array[0].choices[0]}
-          </button>
-          <button onClick={() => progressScenario(array[1], 1)}>
-            {array[0].choices[1]}
-          </button>
+           <h4 className="descBox">{array[0].description}</h4>
+           <div className="buttonGroup">
+           <button onClick={() => resolveScenario(array[1], 1)}>
+             {array[0].choices[0]}
+           </button>
+           <button onClick={() => progressScenario(array[1],1)}>
+             {array[0].choices[1]}
+           </button>
+           </div>
         </div>
+        // <div className="card hover-shadow" key={array[0].name}>
+        //   <img
+        //     className="card-img-top"
+        //     src={array[0].backgroundImg}
+        //     alt={array[0].name}
+        //     width="300px"
+        //     height="350px"
+        //   />
+        //   <p className="scenarioName">{array[0].name}</p>
+        //   <p className="scenarioDescription">{array[0].description}</p>
+        //   <button onClick={() => resolveScenario(array[1], 1)}>
+        //     {array[0].choices[0]}
+        //   </button>
+        //   <button onClick={() => progressScenario(array[1], 1)}>
+        //     {array[0].choices[1]}
+        //   </button>
+        // </div>
       );
     }
   };
