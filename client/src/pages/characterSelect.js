@@ -65,7 +65,7 @@ function CharacterSelect() {
             <div className="card hover-shadow" key={hero.id}>
               {/* <h6>{hero.title}</h6> */}
               <img
-                className="card-img-top"
+                className="card-img-top-char"
                 src={hero.heroImg}
                 alt={hero.heroImg}
                 width="250px"

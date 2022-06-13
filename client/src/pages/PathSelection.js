@@ -132,17 +132,29 @@ function PathSelection({hero}) {
     } else {
       return (
         <div className="PathSelection">
-          <img
-            className="backGround"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lBO2pLkBjCr68rKZPsiStmisxMp5UdIX2w&usqp=CAU"
-            alt="map"
-            height="500px"
-            width="500px"
-          />
-          <button className="easyBtn" onClick={() => chooseDifficulty(easyScen)}>EASY</button>
-          <button className="mediumBtn" onClick={() => chooseDifficulty(normalScen)}>MEDIUM</button>
-          <button className="hardBtn" onClick={() => chooseDifficulty(hardScen)}>HARD</button>
-        </div>
+          <div>
+            <img
+              className="backGround"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lBO2pLkBjCr68rKZPsiStmisxMp5UdIX2w&usqp=CAU"
+              alt="map"
+              //height="50"
+              //width="50"
+            />
+          </div>
+          <table className="buttonGroup">
+            <tr>
+              <td>
+                <button className="easyBtn" onClick={() => chooseDifficulty(easyScen)}>EASY</button>
+              </td>
+              <td>            
+                <button className="mediumBtn" onClick={() => chooseDifficulty(normalScen)}>MEDIUM</button>
+              </td>
+              <td>            
+                <button className="hardBtn" onClick={() => chooseDifficulty(hardScen)}>HARD</button>
+              </td>
+            </tr>
+          </table>
+        </div>  
       );
     }
   };

@@ -6,9 +6,7 @@ function LoginPage() {
 
   return (
     <>
-      <div className="formBox">
-        <Login />
-      </div>
+      <Login />
     </>
   );
 }

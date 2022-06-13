@@ -13,10 +13,6 @@ body{
 
 }
 
-.card-img-top {
-    border-bottom: .5px solid rgb(229, 223, 223);
-}
-
 .card {
     display: flex;
     flex-direction: column;
@@ -27,6 +23,10 @@ body{
     width: 450px;
     padding: 1%;
     background-color: transparent;
+}
+
+.card-img-top {
+    border-bottom: .5px solid rgb(229, 223, 223);
 }
 
 .scenarioName{
@@ -76,3 +76,5 @@ body{
     background-color: lightgray;
     margin: 0%;
 }
+
+
