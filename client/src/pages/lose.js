@@ -7,7 +7,6 @@ function LosePage() {
 
   function changeLocation() {
     window.location.assign('')
-    attPrompt()
   }
 
   return (
