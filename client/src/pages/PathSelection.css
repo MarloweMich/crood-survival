@@ -11,14 +11,15 @@
     max-height: 100%;
     border-radius: 5px;
     box-shadow: 21px 34px 55px black;
+    border: 10px orange solid;
 }
 
 .characterSelect-buttonGroup
 {
     width: 70%;
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 
 .easyBtn, .mediumBtn, .hardBtn
@@ -27,6 +28,25 @@
     font-size: xx-small;
     border-radius: 5px;
     box-shadow: 5px 8px 13px black;
+    position: absolute;
+    bottom: 20%;
+    margin-inline: .2%;
 }
 
+.easyBtn {
+    background-color: greenyellow;
+}
 
+.mediumBtn {
+    background-color: orange;
+}
+
+.hardBtn {
+    background-color: red;
+}
+
+@media screen and (max-width: 900px) {
+    .backGround {
+        margin-bottom: -85%;
+    }
+}
